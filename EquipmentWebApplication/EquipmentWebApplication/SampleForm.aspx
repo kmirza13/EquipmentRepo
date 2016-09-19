@@ -24,6 +24,28 @@
             <SortedDescendingHeaderStyle BackColor="#93451F" />
         </asp:GridView>
         <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetAllEquipments" TypeName="EquipmentWebApplication.EquipmentDataAccessLayer"></asp:ObjectDataSource>
+        <asp:GridView ID="GridView2" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" DataSourceID="ObjectDataSource2">
+            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+            <Columns>
+                <asp:BoundField DataField="MaintenanceWorkId" HeaderText="MaintenanceWorkId" SortExpression="MaintenanceWorkId" />
+                <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
+                <asp:BoundField DataField="Time" HeaderText="Time" SortExpression="Time" />
+                <asp:BoundField DataField="WorkDescription" HeaderText="WorkDescription" SortExpression="WorkDescription" />
+                <asp:BoundField DataField="EquipmentId" HeaderText="EquipmentId" SortExpression="EquipmentId" />
+                <asp:BoundField DataField="TimeTaken" HeaderText="TimeTaken" SortExpression="TimeTaken" />
+            </Columns>
+            <EditRowStyle BackColor="#999999" />
+            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#E9E7E2" />
+            <SortedAscendingHeaderStyle BackColor="#506C8C" />
+            <SortedDescendingCellStyle BackColor="#FFFDF8" />
+            <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+        </asp:GridView>
+        <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="GetAllMaintenanceWorks" TypeName="EquipmentWebApplication.MaintenanceWorkDataAccessLayer"></asp:ObjectDataSource>
     </form>
 </body>
 </html>

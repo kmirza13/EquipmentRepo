@@ -148,6 +148,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Equipment.csv" />
+    <Content Include="MaintenanceWorks.csv" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="SampleForm.aspx" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
@@ -219,6 +220,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MaintenanceWorkDataAccessLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleForm.aspx.cs">
       <DependentUpon>SampleForm.aspx</DependentUpon>
